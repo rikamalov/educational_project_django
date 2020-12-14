@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block thanks %}
+	<!-- Спасибо -->
+  	<section>
+		{% if name %}
+  		<div class="container">
+  			<CENTER style = 'margin-top: 35%; margin-bottom: 35%;'><h1> {{ name }}, Спасибо за заявку!</h1></CENTER>
+  		</div>
+		{% else %}
+		<div class="container">
+  			<CENTER style = 'margin-top: 35%; margin-bottom: 35%;'><h1>Спасибо страница!</h1></CENTER>
+  		</div>
+		{% endif %}
+  	</section>
+  	<!-- Спасибо -->
+{% endblock %}

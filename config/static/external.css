@@ -1,0 +1,75 @@
+/*Heder*/
+.logo-top {
+  width: 100px;
+  height: 40px;
+  float: left;
+  margin: 0px 0px 5px 80px;
+}
+
+.phone-number {
+  width: 200px;
+  height: 40px;
+  float: right;
+  margin: 20px 10px 5px 20px;
+}
+
+.whatsapp-number {
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin: 15px 30px 5px 20px;
+  background: url(./img/wa-image-color.png) no-repeat center top / cover;
+  transition: 0.5s ease-in-out;
+}
+.telegram-number {
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin: 15px 30px 5px 20px;
+  background: url(./img/tg-image-color.png) no-repeat center top / cover;
+  transition: 0.5s ease-in-out;
+}
+
+.slaider_h {
+	height: 60px;
+	width: 50%;
+	margin: 30px 0px 10px 0px;
+	padding-top: 20px;
+	background-color: rgba(10, 77, 125, 0.5);
+	text-align: center;
+}
+
+.slaider_p {
+	height: 100%;
+	width: 80%;
+	float: right;
+	margin: 0px 0px 30px 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(10, 77, 125, 0.5);
+	text-align: center;
+}
+
+.text-3 {
+  color: rgb(10, 77, 125);
+  /*font-family: arial;*/
+  font-size: 2em;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}	
+
+.product_card {
+	margin: 10px;
+}
+
+.table_one {
+	font-size: 1.4em;
+}
+
+.class_form {
+  /*color: #fff;*/
+  /*font-size: 2em;*/
+  text-align: center;
+  padding-bottom: 7%;
+}

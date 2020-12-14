@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block index %}
+	<!-- карусель -->
+  	{% include 'carusel.html' %}
+  	<!-- Карточки -->
+	{% include 'price.html' %}
+  	<!-- форма -->
+  	<section>
+  		<div class="container class_form">
+  			<h1 class="text-3">Оставь заявку и получи услугу</h1>
+  			<div class="row justify-content-center">
+  			<form action="{% url 'thanks_page' %}" method="POST" style="width: 50%;">
+				{% csrf_token %}
+			  <div class="form-group row">
+			    <label for="inputEmail3" class="col-sm-2 col-form-label">Имя</label><br>
+				  {{ form.name }}
+			    <div class="">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="inputEmail3" class="col-sm-2 col-form-label">Телефон</label><br>
+				  {{ form.phone }}
+			    <div class="">
+			    </div>
+			  </div>
+			  <div style="float: right;" class="form-group row">
+			      <button type="submit" class="btn btn-success">ОСТАВИТЬ ЗАЯВКУ</button>
+			  </div>
+			</form>
+			</div>
+  		</div>
+  	</section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "admin/base.html" %}
+{% load static %}
+<link href="{% static 'external.css' %}" rel="stylesheet">
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+{% block extrastyle %}
+<style>
+body {
+    background: #e8e8e8;
+}
+
+h1 {
+    color: #000;
+}
+
+#header {
+    background: #254b69;
+}
+
+#branding {
+    width: 90%;
+}
+
+#site-name {
+    float: right;
+}
+
+</style>
+{% endblock %}
+{% block branding %}
+
+
+<!-- <a class="logo-top" href="#">
+	    <img src="{% static 'img/Logo.png' %}" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+	    Brand Name
+</a> -->
+
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
