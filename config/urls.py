@@ -18,7 +18,7 @@ from django.urls import path
 from crm import views
 from django.conf.urls.static import static
 from django.conf import settings
-from settings import DEBUG
+from .settings import DEBUG
 
 urlpatterns = [
     path('admin/', admin.site.urls),
